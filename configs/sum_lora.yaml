@@ -1,0 +1,54 @@
+defaults:
+    - optimizer: adamw
+    - _self_
+
+training:
+    lr_decay: true
+    weight_decay: 0.0
+    gradient_accumulation_steps: 1
+    lora_dim: 8
+    label_smoothing_factor: 0.0
+    per_device_train_batch_size: 32
+    per_device_eval_batch_size: 32
+    output_dir: ./output
+    overwrite_output_dir: true
+    do_train: true
+    do_eval: true
+    do_predict: true
+    max_grad_norm: 1.0
+    num_train_epochs: 1
+    warmup_steps: 0
+    logging_steps: 1
+    save_steps: 100000
+    eval_steps: 500
+    seed: 42
+    push_to_hub: false
+    hub_model_id: null
+    hub_token: null
+model:
+    model_name_or_path: t5-small
+    config_name: null
+    tokenizer_name: null
+    cache_dir: null
+    use_fast_tokenizer: true
+    dtype: float32
+    use_auth_token: false
+data:
+    max_source_length: 512
+    max_target_length: 128
+    predict_with_generate: true
+    num_beams: null
+    dataset_name: xsum
+    dataset_config_name: null
+    text_column: null
+    summary_column: null
+    val_max_target_length: null
+    train_file: null
+    validation_file: null
+    max_train_samples: null
+    max_eval_samples: null
+    max_predict_samples: null
+    source_prefix: null
+    overwrite_cache: false
+    validation_split_percentage: 5
+    preprocessing_num_workers: null

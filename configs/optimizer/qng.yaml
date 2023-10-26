@@ -1,0 +1,6 @@
+name: qng
+learning_rate: 0.5
+tau: 64
+b1: 0.9
+b2: 0.99
+mu_dtype: float32

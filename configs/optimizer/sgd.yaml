@@ -1,0 +1,4 @@
+name: sgd
+learning_rate: 0.1
+momentum: 0.9
+accumulator_dtype: float32

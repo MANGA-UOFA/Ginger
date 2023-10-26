@@ -1,0 +1,8 @@
+name: ginger
+learning_rate: 0.0002
+b1: 0.9
+b2: 0.99
+tau: 4
+rho: 1
+damping: 1.0e-5
+mu_dtype: null

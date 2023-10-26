@@ -1,0 +1,16 @@
+-f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+jax[cuda12_pip]>=0.4.16
+flax
+chex
+evaluate
+nltk
+optax
+tensorflow
+tensorboard
+tqdm
+matplotlib
+wandb
+hydra-core
+transformers
+datasets
+rouge_score

@@ -1,0 +1,6 @@
+name: adamw
+learning_rate: 0.001
+b1: 0.9
+b2: 0.99
+weight_decay: 0.0
+mu_dtype: float32

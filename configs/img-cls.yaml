@@ -1,0 +1,26 @@
+defaults:
+  - optimizer: adamw
+  - _self_
+
+model:
+  name: resnet18
+  dtype: float32
+batch_size: 128
+seed: 0
+gradient_accumulation: 1
+eval_steps: 500
+patience: 50
+int_weight_decay: false
+weight_decay: 0.0
+lr_decay_rate: 1.0
+augmentation: true
+warmup: 1
+max_epochs: 250
+dataset:
+  name: cifar100
+  train: train
+  valid: test
+debug:
+  nans: false
+  disable_jit: false
+dryrun: false
